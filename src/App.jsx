@@ -6,6 +6,7 @@ import Home from "./components/Home";
 import LocomotiveScroll from "locomotive-scroll";
 import Work from "./components/Work";
 import Collaboration from "./components/Collaboration";
+import SLider from "./components/SLider";
 
 function App() {
   const container = useRef();
@@ -23,6 +24,7 @@ function App() {
       <About />
       <Work />
       <Collaboration/>
+      <SLider/>
     </div>
   );
 }

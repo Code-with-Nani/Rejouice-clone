@@ -22,21 +22,24 @@ const Work = () => {
           { video: vid, image: img },
           { video: vid1, image: img1 },
           { video: vid2, image: img2 },
-        ].map((item,index)=>(
-          <div key={index} className="h-full w-full md:w-[32.7%] relative group hover:cursor-pointer transition-all ease-linear duration-[1s]">
-          <video
-            className="w-full h-full object-cover object-center "
-            src={item.video}
-            autoPlay
-            loop
-            muted
-          ></video>
-          <img
-            src={item.image}
-            alt=""
-            className="w-full h-full object-cover absolute inset-0 group-hover:opacity-0 transition-all ease-linear delay-[0.1s]"
-          />
-        </div>
+        ].map((item, index) => (
+          <div
+            key={index}
+            className="h-full w-full md:w-[32.7%] relative group hover:cursor-pointer transition-all ease-linear duration-[1s]"
+          >
+            <video
+              className="w-full h-full object-cover object-center "
+              src={item.video}
+              autoPlay
+              loop
+              muted
+            ></video>
+            <img
+              src={item.image}
+              alt=""
+              className="w-full h-full object-cover absolute inset-0 group-hover:opacity-0 transition-all ease-linear delay-[0.1s]"
+            />
+          </div>
         ))}
       </div>
     </div>

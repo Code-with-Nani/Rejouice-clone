@@ -22,28 +22,76 @@ const MySwiper = () => {
         }}
         modules={[Autoplay]}
         autoplay={{
-          delay: 1000, 
-          disableOnInteraction: false, 
+          delay: 2000,
+          disableOnInteraction: false,
         }}
         className="mySwiper  lg:h-fit  "
       >
         <SwiperSlide className="flex justify-center gap-2 lg:gap-6 items-end ">
-          <img src={img} alt="" className=" w-[23%] h-[14vh] lg:h-auto object-cover" />
-          <img src={img1} alt="" className=" w-[23%] h-[10vh] lg:h-auto object-cover" />
-          <img src={img2} alt="" className=" w-[23%] h-[11vh] lg:h-auto object-cover" />
-          <img src={img3} alt="" className=" w-[23%] h-[15vh] lg:h-auto object-cover" />
+          <img
+            src={img}
+            alt=""
+            className=" w-[23%] h-[14vh] lg:h-auto object-cover"
+          />
+          <img
+            src={img1}
+            alt=""
+            className=" w-[23%] h-[10vh] lg:h-auto object-cover"
+          />
+          <img
+            src={img2}
+            alt=""
+            className=" w-[23%] h-[11vh] lg:h-auto object-cover"
+          />
+          <img
+            src={img3}
+            alt=""
+            className=" w-[23%] h-[15vh] lg:h-auto object-cover"
+          />
         </SwiperSlide>
         <SwiperSlide className="flex justify-center gap-2 lg:gap-6 items-end ">
-          <img src={img4} alt="" className=" w-[23%] h-[18vh] lg:h-auto  object-cover" />
-          <img src={img} alt="" className=" w-[23%]  h-[14vh] lg:h-auto object-cover" />
-          <img src={img1} alt="" className=" w-[23%] h-[10vh] lg:h-auto object-cover" />
-          <img src={img2} alt="" className=" w-[23%] h-[11vh] lg:h-auto object-cover" />
+          <img
+            src={img4}
+            alt=""
+            className=" w-[23%] h-[18vh] lg:h-auto  object-cover"
+          />
+          <img
+            src={img}
+            alt=""
+            className=" w-[23%]  h-[14vh] lg:h-auto object-cover"
+          />
+          <img
+            src={img1}
+            alt=""
+            className=" w-[23%] h-[10vh] lg:h-auto object-cover"
+          />
+          <img
+            src={img2}
+            alt=""
+            className=" w-[23%] h-[11vh] lg:h-auto object-cover"
+          />
         </SwiperSlide>
         <SwiperSlide className="flex justify-center gap-2 lg:gap-6 items-end ">
-          <img src={img3} alt="" className=" w-[23%] h-[15vh] lg:h-auto object-cover" />
-          <img src={img} alt="" className=" w-[23%]  h-[14vh] lg:h-auto object-cover" />
-          <img src={img1} alt="" className=" w-[23%] h-[10vh] lg:h-auto object-cover" />
-          <img src={img2} alt="" className=" w-[23%] h-[11vh] lg:h-auto object-cover" />
+          <img
+            src={img3}
+            alt=""
+            className=" w-[23%] h-[15vh] lg:h-auto object-cover"
+          />
+          <img
+            src={img}
+            alt=""
+            className=" w-[23%]  h-[14vh] lg:h-auto object-cover"
+          />
+          <img
+            src={img1}
+            alt=""
+            className=" w-[23%] h-[10vh] lg:h-auto object-cover"
+          />
+          <img
+            src={img2}
+            alt=""
+            className=" w-[23%] h-[11vh] lg:h-auto object-cover"
+          />
         </SwiperSlide>
       </Swiper>
     </div>

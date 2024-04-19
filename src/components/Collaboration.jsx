@@ -1,19 +1,11 @@
 import React from "react";
 import vid from "../assets/images/RJ-BALL-BLUE-ORANGE-scaled.webm";
 
-
 const Collaboration = () => {
   return (
     <div className="w-screen h-screen bg-bgWhite text-textWhite flex justify-center items-center relative">
-      <video
-        className="relative"
-        src={vid}
-        autoPlay
-        loop
-        muted
-      ></video>
+      <video className="relative" src={vid} autoPlay loop muted></video>
       <svg
-        
         className="abs tl:0 fit transform rotate:-90deg absolute h-[400px]"
         viewBox="0 0 100 100"
       >

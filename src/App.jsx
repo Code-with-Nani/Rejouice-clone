@@ -7,7 +7,6 @@ import LocomotiveScroll from "locomotive-scroll";
 import Work from "./components/Work";
 import Collaboration from "./components/Collaboration";
 import SLider from "./components/SLider";
-import MyLoader from "./components/MyLoader";
 
 function App() {
   const container = useRef();
@@ -20,7 +19,6 @@ function App() {
 
   return (
     <div ref={container} className="main overflow-hidden">
-      <MyLoader/>
       <Header />
       <Home />
       <About />

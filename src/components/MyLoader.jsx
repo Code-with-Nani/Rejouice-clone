@@ -3,7 +3,7 @@ import gsap from "gsap";
 import React, { useRef } from "react";
 
 gsap.registerPlugin(gsap);
-const MyLoader = () => {
+const MyLoader = ({ onAnimationComplete }) => {
   const loader = useRef();
   const tl = gsap.timeline();
   useGSAP(() => {
@@ -22,8 +22,11 @@ const MyLoader = () => {
     tl.to(".loader", {
       opacity: 0,
     });
+    tl.to(loader.current, {
+      onComplete: onAnimationComplete,
+    });
     tl.to(".loader", {
-     display:"none"
+      display: "none",
     });
   }, [loader]);
   return (

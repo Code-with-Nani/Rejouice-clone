@@ -3,6 +3,7 @@ import video from "../assets/images/Home - REJOUICE®.mp4";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
+gsap.registerPlugin(gsap);
 const Home = () => {
   const [x, setX] = useState("50vw");
   const [y, setY] = useState("50vh");

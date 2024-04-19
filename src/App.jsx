@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import LocomotiveScroll from "locomotive-scroll";
 import Work from "./components/Work";
+import Collaboration from "./components/Collaboration";
 
 function App() {
   const container = useRef();
@@ -21,6 +22,7 @@ function App() {
       <Home />
       <About />
       <Work />
+      <Collaboration/>
     </div>
   );
 }

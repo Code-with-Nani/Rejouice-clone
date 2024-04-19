@@ -18,48 +18,26 @@ const Work = () => {
         </h2>
       </div>
       <div className="box w-full h-full md:h-[50vh] lg:h-[75vh] mt-3 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-0">
-        <div className="h-full w-full md:w-[32.7%] relative group hover:cursor-pointer transition-all ease-linear duration-[1s]">
+        {[
+          { video: vid, image: img },
+          { video: vid1, image: img1 },
+          { video: vid2, image: img2 },
+        ].map((item,index)=>(
+          <div key={index} className="h-full w-full md:w-[32.7%] relative group hover:cursor-pointer transition-all ease-linear duration-[1s]">
           <video
             className="w-full h-full object-cover object-center "
-            src={vid}
+            src={item.video}
             autoPlay
             loop
             muted
           ></video>
           <img
-            src={img}
+            src={item.image}
             alt=""
             className="w-full h-full object-cover absolute inset-0 group-hover:opacity-0 transition-all ease-linear delay-[0.1s]"
           />
         </div>
-        <div className="h-full w-full md:w-[32.7%] relative group hover:cursor-pointer transition-all ease-linear duration-[1s]">
-          <video
-            className="w-full h-full object-cover object-center"
-            src={vid1}
-            autoPlay
-            loop
-            muted
-          ></video>
-          <img
-            src={img1}
-            alt=""
-            className="w-full h-full object-cover absolute inset-0 group-hover:opacity-0 transition-all ease-linear delay-[0.1s]"
-          />
-        </div>
-        <div className="h-full w-full md:w-[32.7%] relative group hover:cursor-pointer transition-all ease-linear duration-[1s] delay-[1s]">
-          <video
-            className="w-full h-full object-cover object-center"
-            src={vid2}
-            autoPlay
-            loop
-            muted
-          ></video>
-          <img
-            src={img2}
-            alt=""
-            className="w-full h-full object-cover absolute inset-0 group-hover:opacity-0 transition-all ease-linear delay-[0.1s]"
-          />
-        </div>
+        ))}
       </div>
     </div>
   );

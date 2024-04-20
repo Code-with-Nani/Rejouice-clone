@@ -47,7 +47,7 @@ const Home = () => {
           </h2>
         </div>
         {loader && (
-          <div className="w-full absolute z-10 bottom-3 select-none flex justify-center items-center pl-12 lg:pl-2 pr-12 md:pr-8">
+          <div className="w-full absolute z-10 bottom-20 sm:bottom-4 select-none flex justify-center items-center pl-12 lg:pl-2 pr-12 md:pr-8">
             {"rejouice".split("").map((item, index) => (
               <motion.h1
                 initial={{ y: "100%" }}
